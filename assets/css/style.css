@@ -48,15 +48,22 @@ nav.menu a{
     font-weight: bold;
 }
 /* CSS related to footer */
-.copyright{
+footer{
     clear: both;
     background: red;
     height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 /* CSS related to the body section */
+.pagecontainer{
+    position: relative;
+    min-height: 100vh;
+    overflow:auto;
+}
 body{
     background-image: url(../images/memphis-mini-dark.png);
-    height: 100%;
 }
 .full{
     width:100%
@@ -65,12 +72,13 @@ body{
     clear:both;
     width: 60%;
     margin: 5% auto;
-    border-style: solid;
-    border-width: 1px;
+    /* border: 5px solid yellow; */
     overflow: auto;
     padding: 2%;
     background-color: gray;
+    /* min-height: 80vh; */
 }
+
 .longLine{
     position: relative;
     background-color: red;
@@ -95,8 +103,7 @@ body{
 .projectname{
     background-color: red;
     position: absolute;
-    bottom:0;
-    z-index: 1000;
+    bottom:10%;
     border: 1px solid yellow;
     float:left;
     width:100%;
