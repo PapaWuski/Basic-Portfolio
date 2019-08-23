@@ -87,7 +87,7 @@ body{
 .longLine{
     position: relative;
     background-color: #036564;
-    height: 1px;
+    height: 3px;
     margin: 15px 0;
 }
 .profile{
@@ -109,9 +109,7 @@ body{
     opacity: .1;
 }
 .project:hover .hiddentext{ 
-    opacity: 1;
-    font-size: 120%;
-    color: rgb(255, 0,0);
+    /* opacity: 1; */
     visibility: visible;
 }
 
@@ -120,6 +118,7 @@ body{
     /* border: 1px solid blue; */
 }
 .project .projectname{
+    box-sizing:border-box;
     background-color: #036564;
     position: absolute;
     bottom:5%;
@@ -129,6 +128,7 @@ body{
     height: 2em;
     font-weight: bold;
     display:table;
+    border: 1px solid #E8DDCB;
 }
 .projectname p{
     vertical-align: middle;
@@ -137,9 +137,18 @@ body{
 }
 
 .project .hiddentext{
+    
+    box-sizing:border-box;
     position: absolute;
-    top: 2em;
+    top: 1em;
     padding: 1em;
-    opacity: 1;
     visibility: hidden;
+    text-align: left;
+    font-size: 120%;
+    color: #E8DDCB;
+    background-color: #031634;
+    opacity: 1;
+    z-index: 1;
+    width: 100%;
+    border: 1px solid #E8DDCB;
 }
