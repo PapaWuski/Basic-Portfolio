@@ -5,12 +5,13 @@
 }
 h1{
     font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #CDB380;
 }
 /* CSS related to any nav tag with the menu tag */
 nav.menu{
     width: 100%;
     height: 50px;
-    background-color: red;
+    background-color: #036564;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -19,39 +20,41 @@ nav.menu h1{
     float: left;
     line-height: 50px;
     /* border: 1px solid green; */
-    left:10%;
+    left: 15%;
     position: absolute;
-    color:whitesmoke
+    color: #CDB380;
 }
 nav.menu ul{
     list-style: none;
     position: absolute;
     /* border: 3px dashed tan; */
-    right: 10%;
+    right: 15%;
     height: 50px;
 }
 nav.menu li{
     padding:10px;
-    background-color: red;
+    background-color: #036564;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: middle;    
+    color: #CDB380;
     /* border: 1px solid green; */
 }
 nav.menu li:hover{
     background-color: grey;
-    border: 5px solid white;
+    border: 5px white;
+    border-style: none solid solid solid;
 }
 nav.menu a{
     float: left;
     text-decoration: none;
     line-height: 25px;
-    color: white;
+
     font-weight: bold;
 }
 /* CSS related to footer */
 footer{
     clear: both;
-    background: red;
+    background: #036564;
     height: 50px;
     width: 100%;
     position: absolute;
@@ -83,7 +86,7 @@ body{
 
 .longLine{
     position: relative;
-    background-color: red;
+    background-color: #036564;
     height: 1px;
     margin: 15px 0;
 }
@@ -94,31 +97,49 @@ body{
 .centerContent{
     text-align: center;
 }
+.leftContent{
+    text-align: left;
+}
 .project{
     display:inline-block;
     position: relative;
     margin: 15px;
 }
-.project:hover{
-    color: rgba(100,100,100, .5);
-    /* background-color: green; */
+.project:hover img{
+    opacity: .1;
 }
+.project:hover .hiddentext{ 
+    opacity: 1;
+    font-size: 120%;
+    color: rgb(255, 0,0);
+    visibility: visible;
+}
+
 .project img{
-    width: 200px;
-    border: 1px solid blue;
+    width: 300px;
+    /* border: 1px solid blue; */
 }
 .project .projectname{
-    background-color: red;
+    background-color: #036564;
     position: absolute;
-    bottom:10%;
-    border: 1px solid yellow;
+    bottom:5%;
+    /* border: 1px solid yellow; */
     float:left;
     width:100%;
     height: 2em;
     font-weight: bold;
-    text-align: center;
-    
+    display:table;
 }
-.project p{
-    vertical-align: bottom;
+.projectname p{
+    vertical-align: middle;
+    display:table-cell;
+    text-align: center;
+}
+
+.project .hiddentext{
+    position: absolute;
+    top: 2em;
+    padding: 1em;
+    opacity: 1;
+    visibility: hidden;
 }
