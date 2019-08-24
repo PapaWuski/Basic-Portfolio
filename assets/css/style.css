@@ -10,6 +10,7 @@ h1{
 }
 p{
     color: #E8DDCB;
+    line-height: 150%;
 }
 /* CSS related to any header tag with the menu tag */
 nav{
@@ -19,7 +20,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 1000;
-    border:1em #036564;
+    border: .5em #036564;
     border-style: none none solid none;
 
 
@@ -63,7 +64,7 @@ footer{
     width: 100%;
     position: absolute;
     bottom: 0;
-    border: 1em #036564;
+    border: .5em #036564;
     border-style: solid none none none;
     display: table;
 }
