@@ -36,25 +36,21 @@ nav{
     float:right;
     position: absolute;
     right: 15%;
-    bottom:0;
+    bottom:0;   
 }
 
 .link{
     float: left;
     text-decoration: none;
     font-weight: bold;
-}
-
-.navLinks p{
     text-align: center;
-    vertical-align: middle;    
-    color: #CDB380;
-    margin: 0 1em;
+    vertical-align: middle; 
+    margin: 0 .1em;
     padding: .3em;
-    
+    color: #CDB380;
 }
 
-.navLinks p:hover{
+.navLinks .link:hover{
     background-color: #036564;
     color: #E8DDCB;
 }
@@ -130,6 +126,7 @@ body{
 }
 
 .submit{
+    margin: 1em 0 0 0;
     color: #E8DDCB;
     background-color: #031634;
     font-size: 200%;
